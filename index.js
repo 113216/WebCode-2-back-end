@@ -11,6 +11,6 @@ app.use(cors({
 
 app.use('/api/cam/', require('./routs/CamRouts'))
 app.use('/api/users/', require('./routs/UsersRouts'))
-app.use('/api/bookings/', require('./routs/bookingRouts'))
+app.use('/api/bookings/', require('./routs/BookingRouts'))
 app.get('/', (req, res) => res.send('Hellow World'))
 app.listen(port, () => console.log(`node server start ${port}`))
